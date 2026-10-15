@@ -35,12 +35,24 @@
       line-height: 1.8;
       padding: 0;
       margin: 0;
+      text-align: right;
       transition: all 0.3s ease;
     }
 
     body.lang-en {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       direction: ltr;
+      text-align: left;
+    }
+
+    .policy-card, .section, .section p, .section li {
+      text-align: right;
+    }
+
+    body.lang-en .policy-card,
+    body.lang-en .section,
+    body.lang-en .section p,
+    body.lang-en .section li {
       text-align: left;
     }
 
@@ -265,6 +277,11 @@
       list-style-type: none;
       padding: 0;
       margin: 14px 0;
+    }
+
+    .section ul ul {
+      margin: 8px 0;
+      padding-inline-start: 16px;
     }
 
     .section li {
