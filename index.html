@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية | تطبيق كريلي - Krily Privacy Policy</title>
+  <meta name="description" content="سياسة الخصوصية الرسمية لتطبيق كريلي (Krily) لتأجير العقارات في الجزائر. توضح كيفية جمع واستخدام وحماية بياناتك وحذف الحساب.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #E94560;
+      --primary-dark: #C82343;
+      --primary-light: rgba(233, 69, 96, 0.08);
+      --bg: #F8F9FB;
+      --surface: #FFFFFF;
+      --text-main: #1A1A2E;
+      --text-muted: #555770;
+      --border: #E6E8EC;
+      --shadow: 0 10px 30px rgba(26, 26, 46, 0.06);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.8;
+      padding: 0;
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+
+    body.lang-en {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      direction: ltr;
+      text-align: left;
+    }
+
+    /* ─── Header ─── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #FF4B6E 0%, #E94560 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
+    }
+
+    .brand-logo svg {
+      width: 26px;
+      height: 26px;
+      fill: white;
+    }
+
+    .brand-name {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-name span {
+      color: var(--primary);
+    }
+
+    .lang-btn {
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid rgba(233, 69, 96, 0.2);
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-1px);
+    }
+
+    /* ─── Hero Section ─── */
+    .hero {
+      background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+      padding: 60px 24px 30px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ─── Highlights Cards ─── */
+    .highlights {
+      max-width: 960px;
+      margin: 20px auto 40px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .highlight-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .highlight-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 22px;
+    }
+
+    .highlight-card h3 {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .highlight-card p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ─── Main Content Container ─── */
+    .content-container {
+      max-width: 960px;
+      margin: 0 auto 60px;
+      padding: 0 24px;
+    }
+
+    .policy-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+    }
+
+    .section {
+      margin-bottom: 36px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .section-title .number {
+      background: var(--primary);
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .section p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 14px 0;
+    }
+
+    .section li {
+      position: relative;
+      padding-inline-start: 24px;
+      margin-bottom: 10px;
+      font-size: 14.5px;
+      color: var(--text-muted);
+    }
+
+    .section li::before {
+      content: "•";
+      color: var(--primary);
+      font-size: 22px;
+      position: absolute;
+      top: -4px;
+      inset-inline-start: 6px;
+    }
+
+    .callout-box {
+      background: var(--primary-light);
+      border-inline-start: 4px solid var(--primary);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .callout-box strong {
+      color: var(--primary);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14.5px;
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 30px 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13.5px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 26px; }
+      .policy-card { padding: 24px 18px; }
+      .section-title { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── Header ─── -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          </svg>
+        </div>
+        <div class="brand-name">Krily <span>كريلي</span></div>
+      </a>
+      <button class="lang-btn" id="langToggle" onclick="toggleLanguage()">
+        🌐 <span id="langBtnText">English</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── Hero Section ─── -->
+  <div class="hero">
+    <div class="hero-badge" id="lastUpdatedBadge">
+      📅 آخر تحديث: أكتوبر 2026
+    </div>
+    <h1 id="heroTitle">سياسة الخصوصية لتطبيق كريلي</h1>
+    <p id="heroSubtitle">نحن في منصة كريلي (Krily) نلتزم التزاماً كاملاً بحماية خصوصيتك وأمان بياناتك وفق أعلى المعايير العالمية ومعايير متجر Google Play.</p>
+  </div>
+
+  <!-- ─── Highlights Cards ─── -->
+  <div class="highlights">
+    <div class="highlight-card">
+      <div class="highlight-icon">🔒</div>
+      <h3 id="hl1Title">أمان وتشفير كامل</h3>
+      <p id="hl1Desc">تشفير جميع البيانات الحساسة عبر بروتوكولات HTTPS و TLS الآمنة.</p>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">🚫</div>
+      <h3 id="hl2Title">عدم بيع البيانات</h3>
+      <p id="hl2Desc">لا نبيع ولا نؤجر بياناتك الشخصية لأي طرف ثالث أو لشبكات الإعلانات.</p>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">📍</div>
+      <h3 id="hl3Title">خصوصية الموقع</h3>
+      <p id="hl3Desc">استخدام الموقع الجغرافي لعرض العقارات القريبة على الخريطة فقط أثناء استخدام التطبيق.</p>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">🗑️</div>
+      <h3 id="hl4Title">حق حذف الحساب</h3>
+      <p id="hl4Desc">يمكنك حذف حسابك وكافة بياناتك نهائياً بلمسة واحدة من داخل التطبيق.</p>
+    </div>
+  </div>
+
+  <!-- ─── Main Content Container ─── -->
+  <div class="content-container">
+    <div class="policy-card" id="policyContent">
+
+      <!-- Section 1 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">1</span> المقدمة</h2>
+        <p>مرحباً بك في تطبيق <strong>كريلي (Krily)</strong>، المنصة المتخصصة في كراء وإيجار العقارات في الجزائر. تحكم سياسة الخصوصية هذه كيفية جمع واستخدام وحماية المعلومات الشخصية التي تقدمها عند استخدام تطبيقنا على الهواتف الذكية.</p>
+        <p>باستخدامك للتطبيق، فإنك توافق على الممارسات الموضحة في هذه الوثيقة بما يتوافق مع متطلبات متجر <strong>Google Play Console</strong> وقوانين حماية البيانات الرقمية.</p>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">2</span> المعلومات التي نقوم بجمعها</h2>
+        <p>نقوم بجمع الحد الأدنى الضروري من البيانات لتقديم وتطوير خدمات المنصة، وتشمل:</p>
+        <ul>
+          <li><strong>معلومات الحساب:</strong> الاسم الكامل، رقم الهاتف، والبريد الإلكتروني، وذلك لإنشاء الحساب، وتوثيق الملاك، والتحقق عبر رسائل OTP.</li>
+          <li><strong>بيانات الموقع الجغرافي (Location Data):</strong> نطلب إذن الوصول إلى موقعك التقريبي أو الدقيق أثناء استخدام التطبيق فقط (Foreground Location) لغرض:
+            <ul>
+              <li>عرض العقارات المتاحة بالقرب منك على الخريطة التفاعلية.</li>
+              <li>حساب المسافة المقدرة وطريق القيادة إلى العقار.</li>
+            </ul>
+            <em>ملاحظة: لا نقوم بتتبع موقعك الجغرافي في الخلفية (Background) بعد إغلاق التطبيق.</em>
+          </li>
+          <li><strong>الصور والوسائط (Camera & Storage):</strong> نطلب إذن الوصول إلى الكاميرا ومعرض الصور لتمكينك من رفع صور العقار عند إضافة إعلان جديد أو رفع الصورة الشخصية لحسابك.</li>
+          <li><strong>المعلومات التقنية وسجلات الأخطاء:</strong> نوع الهاتف، إصدار نظام التشغيل Android، وسجلات تشخيص الأعطال لتحسين استقرار التطبيق.</li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">3</span> كيفية استخدام المعلومات</h2>
+        <p>نستخدم البيانات التي نجمعها للأغراض التالية فقط:</p>
+        <ul>
+          <li>تمكين المستأجرين من استعراض العقارات على الخريطة والتواصل المباشر مع الملاك عبر الهاتف.</li>
+          <li>إرسال الإشعارات الضرورية بخصوص الإعلانات والرسائل والتحديثات المهمة.</li>
+          <li>مكافحة الاحتيال وضمان جودة ومصداقية الإعلانات العقارية المنشورة.</li>
+          <li>تحسين أداء وسرعة التطبيق وتجربة المستخدم.</li>
+        </ul>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">4</span> خدمات الطرف الثالث (Third-Party Services)</h2>
+        <p>قد يستخدم التطبيق خدمات خارجية موثوقة تساعد في تشغيل البنية التحتية، وكل خدمة تلتزم بسياسات خصوصية صارمة:</p>
+        <ul>
+          <li><strong>خدمات Google Play (Google Play Services):</strong> لتشغيل نظام المصادقة والمزامنة.</li>
+          <li><strong>Firebase (Google LLC):</strong> لإرسال الإشعارات اللحظية (FCM)، والمصادقة، وتسجيل تقارير الأعطال (Crashlytics).</li>
+          <li><strong>خوادم OpenStreetMap & OSRM:</strong> لعرض بلاطات الخريطة وحساب مسارات الطرق التقديرية.</li>
+        </ul>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">5</span> مشاركة البيانات وحمايتها</h2>
+        <div class="callout-box">
+          <strong>ضمان عدم بيع البيانات:</strong>
+          نحن لا نقوم ولا نتيح بيع أو تأجير أو مشاركة أي بيانات شخصية أو أرقام هواتف لأي جهات تسويقية خارجية تحت أي ظرف.
+        </div>
+        <p>تتم مشاركة رقم هاتفك واسمك فقط مع الطرف الآخر (المستأجر أو المؤجر) عندما يختار المستخدم الضغط على زر "تواصل مع المالك" لإجراء مكالمة أو بدء محادثة بخصوص عقار محدد.</p>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">6</span> سياسة حذف الحساب والبيانات (Account Deletion)</h2>
+        <p>التزاماً بمتطلبات متجر Google Play، يحق لأي مستخدم حذف حسابه وكافة بياناته نهائياً في أي وقت:</p>
+        <div class="callout-box">
+          <strong>خطوات حذف الحساب من داخل التطبيق:</strong>
+          1. افتح تطبيق كريلي واذهب إلى صفحة <strong>الملف الشخصي (الحساب)</strong>.<br>
+          2. اضغط على <strong>الإعدادات (Settings)</strong>.<br>
+          3. اختر <strong>حذف الحساب نهائياً (Delete Account)</strong> وأكد العملية.<br>
+          عند التأكيد، يتم فوراً حذف ملفك الشخصي وجميع إعلاناتك وصورك من قواعد بياناتنا نهائياً وبلا رجعة.
+        </div>
+        <p>كما يمكنك طلب حذف حسابك وبياناتك عبر مراسلتنا بالبريد الإلكتروني المذكور أدناه مع ذكر رقم الهاتف المسجل به الحساب.</p>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">7</span> خصوصية الأطفال (Children's Privacy)</h2>
+        <p>خدمات تطبيق كريلي مخصصة للبالغين المؤهلين لإبرام عقود الإيجار قانوناً (18 سنة فما فوق). نحن لا نجمع عن قصد أي بيانات شخصية من أطفال دون سن 18 عاماً.</p>
+      </div>
+
+      <!-- Section 8 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">8</span> التعديلات على سياسة الخصوصية</h2>
+        <p>قد نقوم بتحديث سياسة الخصوصية هذه من حين لآخر لتتوافق مع التحديثات القانونية أو متطلبات Google Play. سيتم نشر أي تعديل على هذه الصفحة مع تحديث تاريخ "آخر تحديث".</p>
+      </div>
+
+      <!-- Section 9 -->
+      <div class="section">
+        <h2 class="section-title"><span class="number">9</span> التواصل معنا</h2>
+        <p>إذا كانت لديك أي استفسارات أو أسئلة حول سياسة الخصوصية هذه أو كيفية التعامل مع بياناتك، يمكنك التواصل مع فريق الدعم والتطوير مباشرة عبر:</p>
+        <ul>
+          <li><strong>البريد الإلكتروني للدعم:</strong> <a href="mailto:contact.krily.app@gmail.com" style="color: var(--primary); font-weight: 700;">contact.krily.app@gmail.com</a></li>
+          <li><strong>الجهة المطورة:</strong> منصة كريلي (Krily) - الجزائر</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ─── Footer ─── -->
+  <footer>
+    <p>© 2026 تطبيق كريلي (Krily). جميع الحقوق محفوظة.</p>
+    <p style="margin-top: 6px; font-size: 12px; opacity: 0.8;">تم إعداد هذه السياسة لتتوافق مع شروط متجر Google Play وقوانين الخصوصية الرقمية.</p>
+  </footer>
+
+  <!-- ─── Language Switcher Script ─── -->
+  <script>
+    let currentLang = 'ar';
+
+    const translations = {
+      ar: {
+        dir: 'rtl',
+        langBtnText: 'English',
+        heroTitle: 'سياسة الخصوصية لتطبيق كريلي',
+        heroSubtitle: 'نحن في منصة كريلي (Krily) نلتزم التزاماً كاملاً بحماية خصوصيتك وأمان بياناتك وفق أعلى المعايير العالمية ومعايير متجر Google Play.',
+        lastUpdatedBadge: '📅 آخر تحديث: أكتوبر 2026',
+        hl1Title: 'أمان وتشفير كامل',
+        hl1Desc: 'تشفير جميع البيانات الحساسة عبر بروتوكولات HTTPS و TLS الآمنة.',
+        hl2Title: 'عدم بيع البيانات',
+        hl2Desc: 'لا نبيع ولا نؤجر بياناتك الشخصية لأي طرف ثالث أو لشبكات الإعلانات.',
+        hl3Title: 'خصوصية الموقع',
+        hl3Desc: 'استخدام الموقع الجغرافي لعرض العقارات القريبة على الخريطة فقط أثناء استخدام التطبيق.',
+        hl4Title: 'حق حذف الحساب',
+        hl4Desc: 'يمكنك حذف حسابك وكافة بياناتك نهائياً بلمسة واحدة من داخل التطبيق.'
+      },
+      en: {
+        dir: 'ltr',
+        langBtnText: 'العربية',
+        heroTitle: 'Krily App Privacy Policy',
+        heroSubtitle: 'At Krily, we are fully committed to protecting your privacy and securing your personal data in compliance with international standards and Google Play Store policies.',
+        lastUpdatedBadge: '📅 Last Updated: October 2026',
+        hl1Title: 'Full Encryption',
+        hl1Desc: 'All sensitive data is encrypted in transit using industry-standard HTTPS/TLS protocols.',
+        hl2Title: 'Zero Data Selling',
+        hl2Desc: 'We never sell, rent, or trade your personal information to advertisers or third parties.',
+        hl3Title: 'Location Privacy',
+        hl3Desc: 'Location access is strictly used to display nearby rental properties on the interactive map.',
+        hl4Title: 'Account Deletion',
+        hl4Desc: 'You have full right to permanently delete your account and data directly within the app.'
+      }
+    };
+
+    const enContent = `
+      <div class="section">
+        <h2 class="section-title"><span class="number">1</span> Introduction</h2>
+        <p>Welcome to <strong>Krily</strong>, the mobile platform dedicated to real estate rentals in Algeria. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our mobile application.</p>
+        <p>By using the app, you agree to the collection and use of information in accordance with this policy and the requirements of the <strong>Google Play Console Developer Policies</strong>.</p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title"><span class="number">2</span> Information We Collect</h2>
+        <p>We only collect the minimum amount of data required to provide and improve our services:</p>
+        <ul>
+          <li><strong>Account Information:</strong> Your full name, phone number, and email address for account creation, landlord verification, and secure SMS/OTP authentication.</li>
+          <li><strong>Location Data:</strong> We request foreground access to your approximate or precise location solely while using the app to:
+            <ul>
+              <li>Display available rental properties near you on the interactive map.</li>
+              <li>Estimate driving distance and travel routes to properties.</li>
+            </ul>
+            <em>Note: We never track your background location when the app is closed.</em>
+          </li>
+          <li><strong>Camera & Storage:</strong> Access to your camera and photo library is requested only when you upload property photos for new listings or select a profile picture.</li>
+          <li><strong>Technical Diagnostics:</strong> Device model, Android OS version, and anonymous crash logs to ensure app stability and performance.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title"><span class="number">3</span> How We Use Your Information</h2>
+        <p>We use the collected information for the following specific purposes:</p>
+        <ul>
+          <li>Enabling prospective tenants to explore properties on the map and contact owners directly via phone.</li>
+          <li>Sending critical push notifications regarding listing status, messages, and important app updates.</li>
+          <li>Preventing fraudulent listings and ensuring platform integrity and user safety.</li>
+          <li>Improving app responsiveness, speed, and overall user experience.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title"><span class="number">4</span> Third-Party Services</h2>
+        <p>We work with trusted third-party service providers that adhere to rigorous data protection standards:</p>
+        <ul>
+          <li><strong>Google Play Services:</strong> Core platform support, services, and security.</li>
+          <li><strong>Firebase (Google LLC):</strong> Cloud messaging (FCM), user authentication, and crash telemetry (Crashlytics).</li>
+          <li><strong>OpenStreetMap & OSRM:</strong> Map tiles and open-source driving route estimations.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title"><span class="number">5</span> Data Sharing and Protection</h2>
+        <div class="callout-box">
+          <strong>No-Sale Guarantee:</strong>
+          We do not sell, rent, monetize, or disclose your personal data or phone numbers to third-party advertisers under any circumstances.
+        </div>
+        <p>Your contact phone number and name are only visible to other users when you explicitly choose to list a property or initiate contact regarding a rental inquiry.</p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title"><span class="number">6</span> Account & Data Deletion Rights</h2>
+        <p>In full compliance with Google Play Store policies, every user has the absolute right to delete their account and all associated data permanently at any time:</p>
+        <div class="callout-box">
+          <strong>How to Delete Your Account In-App:</strong>
+          1. Open the Krily app and navigate to your <strong>Profile (Account)</strong> screen.<br>
+          2. Tap <strong>Settings</strong>.<br>
+          3. Select <strong>Delete Account (حذف الحساب)</strong> and confirm.<br>
+          Upon confirmation, your profile, active listings, photos, and personal information are permanently purged from our servers.
+        </div>
+        <p>You can also request manual account deletion by emailing our support team at the contact address below.</p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title"><span class="number">7</span> Children's Privacy</h2>
+        <p>Krily is intended solely for adult users aged 18 and older who are legally capable of entering into rental agreements. We do not knowingly collect personal data from minors under the age of 18.</p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title"><span class="number">8</span> Policy Updates</h2>
+        <p>We may update our Privacy Policy periodically to reflect changes in our service or applicable laws. Any modifications will be posted on this page with an updated "Last Updated" date.</p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title"><span class="number">9</span> Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy or your data rights, please contact our development and privacy team:</p>
+        <ul>
+          <li><strong>Support Email:</strong> <a href="mailto:contact.krily.app@gmail.com" style="color: var(--primary); font-weight: 700;">contact.krily.app@gmail.com</a></li>
+          <li><strong>Developer Entity:</strong> Krily Platform - Algeria</li>
+        </ul>
+      </div>
+    `;
+
+    let arContent = '';
+
+    window.onload = function() {
+      arContent = document.getElementById('policyContent').innerHTML;
+    };
+
+    function toggleLanguage() {
+      const body = document.body;
+      const content = document.getElementById('policyContent');
+
+      if (currentLang === 'ar') {
+        currentLang = 'en';
+        body.classList.add('lang-en');
+        body.setAttribute('dir', 'ltr');
+        content.innerHTML = enContent;
+      } else {
+        currentLang = 'ar';
+        body.classList.remove('lang-en');
+        body.setAttribute('dir', 'rtl');
+        content.innerHTML = arContent;
+      }
+
+      const t = translations[currentLang];
+      document.getElementById('langBtnText').innerText = t.langBtnText;
+      document.getElementById('heroTitle').innerText = t.heroTitle;
+      document.getElementById('heroSubtitle').innerText = t.heroSubtitle;
+      document.getElementById('lastUpdatedBadge').innerText = t.lastUpdatedBadge;
+      document.getElementById('hl1Title').innerText = t.hl1Title;
+      document.getElementById('hl1Desc').innerText = t.hl1Desc;
+      document.getElementById('hl2Title').innerText = t.hl2Title;
+      document.getElementById('hl2Desc').innerText = t.hl2Desc;
+      document.getElementById('hl3Title').innerText = t.hl3Title;
+      document.getElementById('hl3Desc').innerText = t.hl3Desc;
+      document.getElementById('hl4Title').innerText = t.hl4Title;
+      document.getElementById('hl4Desc').innerText = t.hl4Desc;
+    }
+  </script>
+</body>
+</html>
